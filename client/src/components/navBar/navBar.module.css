@@ -1,0 +1,394 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{font-family: 'Oswald', sans-serif;}
+
+.width{
+    width: 100%;
+    height: 100%;
+}
+.containerNav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    transition: background-color .5s;
+}
+
+.flexContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.logoContainer{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row ;
+    color: black;
+    font-size: 1.4em;
+    font-weight: 400;
+    gap: 1em;
+    float: left;
+}
+
+.logoContainer img{
+    width: 5em;
+    height: 5em;
+    cursor: pointer;
+}
+.logoContainer a{
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+
+.buttonsContainer{
+    display:flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    gap: 0em;
+    
+}
+
+.buttons{
+  display:flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  gap: 0em;
+
+  
+}
+
+.buttons button, .buttons a {
+    display: flex;
+    position: relative;
+    min-width: 6em;
+    justify-content: center;
+    height: 3em;
+    font-size: 1.2em;
+    background: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 200;
+}
+
+.buttons span{
+    color: rgb(240, 209, 56);
+}
+
+
+.select{
+    display: flex;
+    padding: 0 0 0 0 !important;
+    width: 6em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.select select:focus{
+    border-radius: 0px;
+}
+.select:focus{
+    outline: none;
+    border-radius: 0;
+}
+
+.selectDiv svg{
+    color: white;
+    width: .7em;
+    height: .7em;
+    align-self: center;
+}
+
+.selectDiv:focus{
+    outline: 3px solid white;
+}
+.select option{
+    width: 3em;
+}
+
+
+.buttonsContainer button:hover, select:hover, .buttonsContainer a:hover{
+    color:#949494;
+}
+
+.buttonsContainer button:focus{
+    outline:none;
+}
+
+
+.dropdown button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownmenu{
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100%) ;
+    background-color: rgb(54, 54, 54);
+    border-radius: 0em 0em 0em 0em;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.36);
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-10px);
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+    pointer-events: none; 
+    z-index: 20;
+  }
+  
+  .dropdownmenu a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid;
+    border-color: rgb(86, 86, 86);
+    padding-top: 0.3em;
+  }
+  
+  
+  .dropdownmenuActive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 0em 0em 0em 0em;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.36);
+    opacity: 1;
+    text-align: center;
+    width: 100%;
+    transform: translateY(0);
+    pointer-events: auto; 
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+  }
+  
+  .dropdownmenuActive a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid;
+    border-color: rgb(86, 86, 86);
+    padding-top: 0.3em;
+  }
+
+  .social{
+      display: flex;
+      width: 20em;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      gap:1em ;
+  }
+
+
+  .social svg{
+      width: 2em;
+      height: 2em;
+      color: rgb(255, 255, 255);
+  }
+
+  .social svg:hover{
+      color:rgb(146, 146, 146)
+  }
+  .icon3{
+    justify-content: center;
+    align-items: center;
+    margin-left: .5em;
+    margin-top:0.25em;
+    width: 4em;
+    height: 4em;
+    right: 0;
+    background:none;
+    border-radius:50% ;
+  }
+  .icon3 img{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+      margin-right: 0.5em;
+  }
+  .username{
+    display: flex;
+    height: 100%;
+    margin-left:1.5em;
+    margin-right: .5em;
+    align-items: center;
+    color: rgb(136, 136, 136);
+    font-weight: 20;
+  }
+  
+  .dropdownUser{
+    position: relative;
+  
+  }
+  
+  .dropdownmenuUser{
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100%) ;
+    padding: .50rem;
+    border-radius: 0em 0em 1em 1em;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.36);
+    opacity: 0;
+    text-align: center;
+    min-width: 10em;
+    right: 0%;
+    transform: translateY(-10px);
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+    pointer-events: auto; 
+  
+  }
+  
+  .dropdownmenuUser a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid;
+    border-color: rgb(86, 86, 86);
+    padding-top: 0.3em;
+  }
+  
+  
+  .dropdownmenuUserActive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% ) ;
+    background-color: rgb(54, 54, 54);
+    padding: .50rem;
+    border-radius: 0em 0em 1em 1em;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.36);
+    opacity: 1;
+    text-align: center;
+    min-width: 10em;
+    right: 0em !important;
+    transform: translateY(0);
+    pointer-events: auto; 
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+  }
+  .dropdownmenuUserActive button{
+    display: flex;
+    background: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    outline-style: none;
+    color: rgb(221, 221, 221);
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid rgb(86, 86, 86);
+    padding-top: 0.3em;
+  }
+  
+  .dropdownmenuUserActive button:hover{
+    border-bottom: 1px solid rgb(86, 86, 86);
+  }
+
+  .dropdownmenuUserActive a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid;
+    border-color: rgb(86, 86, 86);
+    padding-top: 0.3em;
+  }
+  
+  .icon3Active{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:0.25em;
+    width: 100%;
+    height: 4em;
+    background:none;
+    border-radius:50% ;
+  }
+  .icon3Active img{
+    display: flex;
+    justify-self: flex-end;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+  }
+
+  .buttonsPhone{
+    display: none;
+    pointer-events: none;
+}
+
+.phoneMenu, .menuIcon{
+    display: none;
+    pointer-events: none;
+}
+
+  @media (max-width: 768px) {
+    .buttons{
+      display: none;
+      pointer-events: none;
+    }
+
+    .phoneMenuActive{
+      display: flex;
+      position: absolute;
+      left: 0;
+      pointer-events: auto;
+
+  }
+
+  .buttonsPhoneActive{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+}
+.menuIcon{
+  display: flex;
+  pointer-events: auto;
+}
+.logoContainer{
+  margin-left: 1em;
+}
+.logoContainer img{
+  width: 4em;
+  height: 3em;
+}
+.dropdownmenuActive{
+  display: flex;
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  right: 0;
+
+}
+.container{
+  position: absolute;
+  z-index: 0;
+}
+.social{
+  width: 17em;
+  margin-right: 1.2em;
+}
+}
